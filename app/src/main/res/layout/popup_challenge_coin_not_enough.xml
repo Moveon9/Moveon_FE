@@ -1,49 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/challenge_coin_not_section"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@drawable/popup_background"
-    android:layout_gravity="center"
-    android:padding="16dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="코인이 부족합니다!"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:layout_gravity="center_horizontal"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="잔여 포인트 : 10"
-        android:textSize="14sp"
-        android:textColor="#818682"
-        android:layout_marginTop="4dp"
-        android:layout_gravity="center_horizontal"/>
-    <!-- 버튼 영역 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp"
-        android:gravity="center">
-        <!-- 버튼 -->
-        <Button
-            android:id="@+id/btn_next_action"
-            android:layout_width="266dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/rounded_corner_main"
-            android:backgroundTint="#398342"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="다음에 하기"
-            android:textColor="@android:color/white"
-            android:textSize="16sp" />
-    </LinearLayout>
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent">
 
-</LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <!-- 타이틀 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="코인이 부족합니다!"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 포인트 잔여량 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="잔여 포인트 : 10"
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 버튼 -->
+            <Button
+                android:id="@+id/btn_next_action"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner_main"
+                android:backgroundTint="#398342"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="다음에 하기"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
