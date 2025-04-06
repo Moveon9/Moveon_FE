@@ -183,8 +183,8 @@ class MarathonMainFragment : Fragment(), OnMapReadyCallback {
         viewLifecycleOwner.lifecycleScope.launch {
             try {
                 val response = RetrofitClient.instance.getDirection(
-                    clientId = "szv2eoxq9s",
-                    clientSecret = "3HgngSCA6dSeJv8aSX1FlW9Mgm9upwOCaGIdMgtd",
+                    clientId = "클라이언트 id",
+                    clientSecret = "api키",
                     start = start,
                     goal = goal,
                     option = "traoptimal"
