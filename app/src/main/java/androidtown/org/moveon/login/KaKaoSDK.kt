@@ -9,7 +9,7 @@ class KaKaoSDK : Application(){
 
         KakaoSdk.init(
             context = this,
-            appKey = "ba5daeb1c42d6bf9c1ac9b8f6ae78ada"
+            appKey = "api key"
         )
     }
 }
