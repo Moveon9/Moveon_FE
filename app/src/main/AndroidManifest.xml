@@ -12,6 +12,7 @@
     <uses-feature android:name="android.hardware.sensor.stepdetector" />
 
     <application
+        android:name=".login.KaKaoSDK"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -23,17 +24,23 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
-
         <!-- Google Maps API 키 추가 -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="szv2eoxq9s"
+            />
 
         <activity
             android:name=".MapActivity"
             android:exported="false" />
 
         <activity android:name=".RecordRunningActivity" />
+        <activity android:name=".login.UserInfoActivity1" />
+        <activity android:name=".login.UserInfoActivity2" />
+
 
         <activity
             android:name=".MainActivity"

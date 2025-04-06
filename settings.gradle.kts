@@ -8,16 +8,18 @@ pluginManagement {
             }
         }
         mavenCentral()
-        maven{url = uri("https://jitpack.io")}
+        maven("https://jitpack.io")
         gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
-        maven{url = uri("https://jitpack.io")}
+        maven("https://jitpack.io")
+        maven("https://repository.map.naver.com/archive/maven")
+        maven("https://devrepo.kakao.com/nexus/content/groups/public/")
     }
 }
 
