@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_marginTop="118dp"
+        android:gravity="center"
+        android:src="@drawable/login_ic_logo"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/text_login"
+        />
+    <ImageButton
+        android:id="@+id/google_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_google_ic"
+        />
+    <ImageButton
+        android:id="@+id/kakao_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_kakao_medium_narrow"
+        />
+</LinearLayout>
+
+
+
+
+
+
+

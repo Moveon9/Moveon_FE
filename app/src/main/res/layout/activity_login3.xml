@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="189dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="118dp"
+        android:layout_gravity="center"
+        android:src="@drawable/login_ic_main_character"/>
+    <ImageView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/login_text_2"
+        />
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+        android:text="시작하기"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_corner_main"
+        android:layout_margin="100dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

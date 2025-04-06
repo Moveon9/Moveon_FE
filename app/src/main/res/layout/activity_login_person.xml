@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/top_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/login_ic_main_character"
+            android:layout_marginBottom="16dp"
+            />
+        <TextView
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="다음"
+            android:textSize="16sp"
+            android:textColor="#398342"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+    <!--정보 입력란 (이름, 몸무게) -->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="이름"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:layout_marginBottom="16dp"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_input_background_green"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="몸무게"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/edit_text_weight"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="ex) 56"
+            android:layout_marginBottom="16dp"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_input_background_gray"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="성별"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <!-- Select button -->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/male_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_bg_unselected_button"
+            android:text="남성"
+            android:textColor="#C5C6CC"
+            android:textSize="15sp"
+            android:layout_marginEnd="15dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/female_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_bg_unselected_button"
+            android:text="여성"
+            android:textSize="15sp"
+            android:textColor="#C5C6CC"
+            android:padding="12dp" />
+    </LinearLayout>
+</LinearLayout>
+
+
+

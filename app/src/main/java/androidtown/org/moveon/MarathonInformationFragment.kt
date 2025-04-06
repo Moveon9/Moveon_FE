@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidtown.org.moveon.marathon.MarathonMainFragment
 
 class MarathonInformationFragment : Fragment() {
 
@@ -44,6 +45,18 @@ class MarathonInformationFragment : Fragment() {
         // 도전하기 버튼 클릭 이벤트
         challengeButton.setOnClickListener {
             // TODO: 도전하기 버튼 다음 화면
+            val fragment = MarathonMainFragment().apply {
+                arguments = Bundle().apply {
+                    putDouble("startLat", 37.566609)
+                    putDouble("startLng", 126.978371)
+                    putDouble("goalLat", 37.497942)
+                    putDouble("goalLng", 127.027621)
+                }
+            }
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .addToBackStack(null)
+                .commit()
         }
 
         return view
